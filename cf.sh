@@ -49,12 +49,12 @@ apt install jq curl -y
 clear
 
 read -rp "Sub Domain (Contoh: DevsTn): " sub
-DOMAIN=Rstorenet.my.id
+DOMAIN=rstorenet.my.id
 echo $sub > /root/cfku
-SUB_DOMAIN=${sub}.Rstorenet.my.id
+SUB_DOMAIN=${sub}.rstorenet.my.id
 CF_ID=tazzpyns@gmail.com
 CF_KEY=1ff2e2bfc5f3341e1e7a70ed2c1a333841a8b
-echo ".Rstorenet.my.id" > /root/domain
+echo ".rstorenet.my.id" > /root/domain
 echo $SUB_DOMAIN > /root/domain
 
 set -euo pipefail
